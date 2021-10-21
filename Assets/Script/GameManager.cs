@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     private List<GameObject> currentCommand;
     [SerializeField]
     private Transform uiCommand;
+    [SerializeField]
+    private GameObject victoryScreen;
+
+
 
     private int commandSize = 4;
 
@@ -30,8 +34,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void WinGame()
     {
-        
+        victoryScreen.SetActive(true);
     }
 }
