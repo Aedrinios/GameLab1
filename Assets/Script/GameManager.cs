@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,9 +10,10 @@ public class GameManager : MonoBehaviour
     private List<GameObject> ingredients;
     [SerializeField]
     private List<GameObject> currentCommand;
-    private int commandSize = 4;
+    [SerializeField]
+    private Transform uiCommand;
 
-    
+    private int commandSize = 4;
 
     private void Start()
     {
@@ -21,8 +24,9 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < commandSize; i++)
         {
-            currentCommand.Add(ingredients[Random.Range(0, ingredients.Count)]);
-
+            GameObject go = ingredients[Random.Range(0, ingredients.Count)];
+            currentCommand.Add(go);
+            uiCommand.GetChild(i).GetComponent<TextMeshProUGUI>().text = go.name;
         }
     }
 

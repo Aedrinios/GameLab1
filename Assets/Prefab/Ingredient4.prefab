@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 998073805607652633}
   - component: {fileID: 2308996508304987479}
   - component: {fileID: 8813144021007805598}
+  - component: {fileID: -2483508646182079855}
   m_Layer: 0
   m_Name: Ingredient4
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,3 +96,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2483508646182079855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099832448931361133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d90834f8a6a2148b658d2fd7248610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
