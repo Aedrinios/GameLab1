@@ -26,7 +26,7 @@ public class RayManager : MonoBehaviour
                     hit.transform.position = tpposition.position;
                     Itemcontroller Ic = hit.transform.gameObject.GetComponent <Itemcontroller>();
                     if (Ic != null){
-                        Ic.toggleKinematic();
+                        Ic.setParent(tpposition);
                     }
                 }
 

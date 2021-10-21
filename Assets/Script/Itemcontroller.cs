@@ -14,4 +14,7 @@ public class Itemcontroller : MonoBehaviour
     public void toggleKinematic(){
         rb.isKinematic = !rb.isKinematic;
     }
+    public void setParent(Transform go){
+        gameObject.transform.parent = go;
+    }
 }
